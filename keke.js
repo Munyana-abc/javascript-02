@@ -14,3 +14,26 @@ if (balance >= ticketPrice && age > 12) {
 } else {
     console.log("You cannot board the bus.");
 }
+
+let itemPrice = 25;
+let itemsBought = 6;
+let isMember = true;
+
+// Calculate total price
+let totalPrice = itemPrice * itemsBought;
+
+// Check if discount applies
+let finalPrice;
+
+if (totalPrice > 100 && isMember) {
+    let discount = totalPrice * 0.10;
+    finalPrice = totalPrice - discount;
+    console.log("Discount applied!");
+} else {
+    finalPrice = totalPrice;
+    console.log("No discount applied.");
+}
+
+// Display results
+console.log("Total Price:", totalPrice);
+console.log("Final Price:", finalPrice);
