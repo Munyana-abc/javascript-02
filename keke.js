@@ -37,3 +37,34 @@ if (totalPrice > 100 && isMember) {
 // Display results
 console.log("Total Price:", totalPrice);
 console.log("Final Price:", finalPrice);
+
+
+let score = 88;
+let attendance = 80;
+
+if (score >= 50 && attendance >= 75) {
+    console.log("Student passes");
+
+    if (score >= 85) {
+        console.log("Student gets distinction");
+    }
+} else {
+    console.log("Student fails");
+}
+
+let battery = 80;        // current battery percentage
+let usage = 35;          // battery used
+let chargerConnected = true;
+
+// Calculate new battery percentage
+let newBattery = battery - usage;
+
+// Check if warning should appear
+if (newBattery < 20 || !chargerConnected) {
+    console.log("Warning: Battery low or charger not connected!");
+} else {
+    console.log("Battery level is okay.");
+}
+
+// Display battery percentage
+console.log("Remaining Battery:", newBattery + "%");
