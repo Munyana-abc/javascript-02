@@ -68,3 +68,20 @@ if (newBattery < 20 || !chargerConnected) {
 
 // Display battery percentage
 console.log("Remaining Battery:", newBattery + "%");
+
+let adults = 4;
+let children = 3;
+let weekend = true;
+
+let total = adults * 10 + children * 5;
+
+// Check if discount applies and calculate total
+if ((adults + children) > 5 && weekend) {
+    console.log("Discount applies!");
+    total = total - total * 0.15;
+} else {
+    console.log("No discount applied.");
+}
+
+// Display final total cost
+console.log("Total cost:", total);
